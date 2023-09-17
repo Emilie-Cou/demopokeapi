@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Josefin+Sans|Oswald|Ubuntu+Condensed|Yanone+Kaffeesatz");
+
+.details_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        background-color: #FFCB05;
+        border: 5px solid #3D7DCA;
+        border-radius: 12px;
+        color: #FFF;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 5px #0A74DA;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: #3D7DCA;
+            border: 5px solid #FFCB05;
+            color: #FFCB05;
+            box-shadow: 0 3px #0a74da;
+        }
+
+        &:active {
+            box-shadow: none;
+            transform: translateY(5px);
+        }
+    }
+
+    .details_display{
+        background: radial-gradient(circle, #FFcc00, #ffd700, #FFcc00);
+        border: 10px solid #ffe164;
+        border-radius: 10px;
+        box-shadow: inset(0 0 10px #000);
+        margin-top: 50px;
+        margin-left: 10px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    
+        h2 {
+            color: #000;
+            display: inline-block;
+            font-family: "Yanone Kaffeesatz", sans-serif;
+            font-size: 25px;
+            font-weight: 700;
+            width: 50%;
+            padding-left: 1rem;
+            margin: 1rem;
+        }
+
+        img {
+            background: linear-gradient(#186ed1, #44a4e1, #95cdeb);
+            border: #ffe164 4px solid;
+            border-style: outset;
+            box-shadow: #301e0a 3px 3px 20px 2px;
+            margin: 20px;
+            padding-left: 20px;
+            width: 12rem;
+            align-self: center;
+            margin: 0rem 1rem;
+        }
+
+        p {
+            padding: 1rem;
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
